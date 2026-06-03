@@ -801,10 +801,10 @@
         Deben estar en la MISMA carpeta que este HTML.
 ====================================================== -->
 <audio id="audio1" loop>
-  <source src="musica1.mp3" type="audio/mpeg" />
+  <source src="【Ado】Birthday Song for ミク 歌いました【ワンコーラス】.mov" type="audio/mpeg" />
 </audio>
 <audio id="audio2" loop>
-  <source src="musica2.mp3" type="audio/mpeg" />
+  <source src="The Weeknd, JENNIE & Lily Rose Depp - One Of The Girls (Official Audio).mp3" type="audio/mpeg" />
 </audio>
 
 <!-- Floating audio toggle -->
@@ -966,8 +966,8 @@
   Cambia las rutas a los nombres exactos de tus archivos .mp3
   (deben estar en la misma carpeta que este archivo HTML)
 ============================================================ */
-const MUSIC_1 = 'musica1.mp3'; // Pantalla de bienvenida
-const MUSIC_2 = 'musica2.mp3'; // Pantalla de cartas y cupones
+const MUSIC_1 = '【Ado】Birthday Song for ミク 歌いました【ワンコーラス】.mov';
+const MUSIC_2 = 'The Weeknd, JENNIE & Lily Rose Depp - One Of The Girls (Official Audio).mp3';
 
 
 /* ============================================================
@@ -976,120 +976,130 @@ const MUSIC_2 = 'musica2.mp3'; // Pantalla de cartas y cupones
   NO modifiques los "id", el orden numérico es importante.
 ============================================================ */
 const CARTAS = [
-  {
-    id: 1,
-    titulo: "Carta #1",
-    mensaje: "Escribe aquí tu primer mensaje especial para Bri. Este es el texto que aparecerá en la carta cuando ella la abra. ¡Hazlo con todo el amor que sientes! 💕"
+{
+    "id": 1,
+    "titulo": "10 de Mayo 2026",
+    "mensaje": "No hay lugar en el mundo donde me sienta más seguro y en paz que cuando estoy a tu lado. Eres mi refugio favorito."
   },
   {
-    id: 2,
-    titulo: "Carta #2",
-    mensaje: "Tu segundo mensaje va aquí. Cada carta puede tener una historia, un momento o una razón por la que Bri es tan especial para ti. 🌸"
+    "id": 2,
+    "titulo": "11 de Mayo",
+    "mensaje": "Sin importar la distancia o el momento, siempre me voy a preocupar por ti. Prometo intentar acompañarte en cada paso que des."
   },
   {
-    id: 3,
-    titulo: "Carta #3",
-    mensaje: "Tercer mensaje. ¿Qué es lo que más admiras de ella? Este es el lugar perfecto para decírselo con palabras del corazón. ✨"
+    "id": 3,
+    "titulo": "12 de Mayo",
+    "mensaje": "Tu belleza es simplemente innegable. Tienes esa luz mágica que enamora a cualquiera que te mire, pero a mí me atrapó por completo."
   },
   {
-    id: 4,
-    titulo: "Carta #4",
-    mensaje: "Cuarto mensaje. Puedes escribir un recuerdo favorito que compartieron, algo que te haga sonreír cada vez que lo recuerdas. 🌷"
+    "id": 4,
+    "titulo": "13 de Mayo",
+    "mensaje": "Contigo no tengo miedo de mostrar mis cicatrices. Eres la única persona con la que puedo ser completamente vulnerable y transparente."
   },
   {
-    id: 5,
-    titulo: "Carta #5",
-    mensaje: "Quinto mensaje. Dile algo que quizás nunca le has dicho en voz alta. Las palabras escritas tienen su propia magia y permanencia. 💌"
+    "id": 5,
+    "titulo": "14 de Mayo",
+    "mensaje": "Mi honestidad contigo es inquebrantable. Jamás podría mentirte, ni siquiera si eso me trajera algún tipo de beneficio personal."
   },
   {
-    id: 6,
-    titulo: "Carta #6",
-    mensaje: "Sexto mensaje. Cuéntale cuánto ha significado su presencia en tu vida. Sé tan específico o tan poético como quieras. 🌙"
+    "id": 6,
+    "titulo": "15 de Mayo",
+    "mensaje": "Aunque a veces los recuerdos duelan, lo que más me parte el alma es verte pasar un mal momento. Haré todo lo posible por ser tu paz, nunca una carga."
   },
   {
-    id: 7,
-    titulo: "Carta #7",
-    mensaje: "Séptimo mensaje. ¿Qué deseos tienes para ella en este nuevo año de vida? Escríbelos con todo el amor y la esperanza que llevas dentro. 🎂"
+    "id": 7,
+    "titulo": "16 de Mayo",
+    "mensaje": "Tal vez sienta que no puedo arreglarlo todo, pero nunca olvides cuánto le importas a tantas personas. Queremos que estés siempre en nuestras vidas."
   },
   {
-    id: 8,
-    titulo: "Carta #8",
-    mensaje: "Octavo mensaje. Una lista de cosas que amas de ella, o simplemente una anécdota divertida que solo ustedes dos conocen y atesoran. 😊"
+    "id": 8,
+    "titulo": "17 de Mayo",
+    "mensaje": "¡Acuérdate de que me debes unos cupcakes! Así que ve preparando esas manos, que te voy a poner a chambear en la cocina muy pronto, jaja. 🧁"
   },
   {
-    id: 9,
-    titulo: "Carta #9",
-    mensaje: "Noveno mensaje. Algo que te haya enseñado sin darse cuenta. Las personas especiales nos cambian de formas que no imaginamos. 🦋"
+    "id": 9,
+    "titulo": "18 de Mayo",
+    "mensaje": "Cada meta que alcance también será tuya, porque has sido mi mayor apoyo. Eres una pieza fundamental en mi vida y no quiero que te alejes jamás."
   },
   {
-    id: 10,
-    titulo: "Carta #10",
-    mensaje: "Décima carta. A mitad del camino de estas 23. Espero que cada una la haga sentir lo amada y valorada que realmente es. 💗"
+    "id": 10,
+    "titulo": "19 de Mayo",
+    "mensaje": "Jamás, en la vida, me va a molestar un mensaje tuyo. Escríbeme cuando quieras y a la hora que sea, siempre me alegras el día."
   },
   {
-    id: 11,
-    titulo: "Carta #11",
-    mensaje: "Undécima carta. Escribe sobre un sueño que esperas que ella pueda cumplir pronto. Tus palabras pueden inspirarla más de lo que crees. ⭐"
+    "id": 11,
+    "titulo": "20 de Mayo",
+    "mensaje": "Compartir los mismos gustos y pasar horas hablando de puras tonterías se ha convertido en uno de los momentos más felices de mi vida."
   },
   {
-    id: 12,
-    titulo: "Carta #12",
-    mensaje: "Doceava carta. Algo que siempre quiso escuchar. A veces las personas más fuertes también necesitan saber que son suficientes. 🌺"
+    "id": 12,
+    "titulo": "21 de Mayo",
+    "mensaje": "Aunque te rías, por ti daría lo que fuera; no solo un riñón, sino también mis ojos, mis pulmones y, sobre todo, este corazón que ya es tuyo."
   },
   {
-    id: 13,
-    titulo: "Carta #13",
-    mensaje: "Treceava carta. ¿Superstición? Para nada. Solo más amor. Cuéntale algo que la haga reír hasta que le duela la panza. 🌈"
+    "id": 13,
+    "titulo": "22 de Mayo",
+    "mensaje": "Toda mi biblioteca y mis historias te pertenecen. Están listas para que te sumerjas en ellas y disfrutes de cada página siempre que quieras."
   },
   {
-    id: 14,
-    titulo: "Carta #14",
-    mensaje: "Catorceava carta. Un lugar al que te gustaría llevarla algún día, o un plan pendiente que los dos están esperando vivir. 🗺️"
+    "id": 14,
+    "titulo": "23 de Mayo",
+    "mensaje": "El mundo debería edificar un museo para celebrar tus logros y todo lo hermoso que haces por los demás. Si pudiera, yo mismo te construiría ese museo."
   },
   {
-    id: 15,
-    titulo: "Carta #15",
-    mensaje: "Quinceava carta. Cuéntale lo orgullosa que te sientes de verla crecer, superar retos y convertirse en quien es hoy. 🏆"
+    "id": 15,
+    "titulo": "24 de Mayo",
+    "mensaje": "Te has ganado un lugar increíblemente profundo y único dentro de mí, y ten por seguro que con esos sentimientos jamás voy a jugar."
   },
   {
-    id: 16,
-    titulo: "Carta #16",
-    mensaje: "Dieciseisava carta. Una promesa. Algo que quieres comprometerte a hacer por ella o junto a ella en el futuro que les espera. 🤝"
+    "id": 16,
+    "titulo": "25 de Mayo",
+    "mensaje": "Esta promesa va muy en serio. Espero que confíes en mí y sepas que jamás dejaría de cumplir algo que te prometo de corazón."
   },
   {
-    id: 17,
-    titulo: "Carta #17",
-    mensaje: "Diecisieteava carta. Describe un momento perfecto imaginario entre los dos. Aunque sea soñado, hazlo tan detallado como puedas. 🌅"
+    "id": 17,
+    "titulo": "26 de Mayo",
+    "mensaje": "Siempre, pase lo que pase, seré tu fan número uno. Prometo estar ahí para tomar tu mano y llevarte a tu lugar feliz cada vez que lo necesites."
   },
   {
-    id: 18,
-    titulo: "Carta #18",
-    mensaje: "Dieciochoava carta. ¿Qué canción le dedicarías y por qué? La música dice lo que a veces las palabras solas no pueden expresar. 🎵"
+    "id": 18,
+    "titulo": "27 de Mayo",
+    "mensaje": "01010000 01110101 01101100 01100011 01101000 01100101 01110010 01110010 01101001 01101101 01100001 00100000 01100101 01110100 00100000 01101101 01101001 01110010 01100001 01100010 01101001 01101100 01101001 01110011 01110011 01101001 01101101 01100001 00100000 01100110 01100101 01101101 01101001 01101110 01100001 00100000 01100101 01110011 00100000 01110001 01110101 01100001 01100101 00100000 01110101 01101101 01110001 01110101 01100001 01101101 00100000 01101001 01101110 00100000 01110110 01101001 01110100 01100001 01101101 00100000 01101101 01100101 01100001 01101101 00100000 01110110 01100101 01101110 01101001 01110100 00101110 00100000 01010011 01110000 01100101 01110010 01101111 00100000 01110100 01100101 00100000 01101000 01101111 01100011 00100000 01101001 01101110 01110100 01100101 01101100 01101100 01100101 01100111 01100101 01110010 01100101 00101110 00100000 01001101 01101001 01101000 01101001 00100000 01110000 01101100 01110101 01110010 01101001 01101101 01110101 01101101 00100000 01110110 01100001 01101100 01100101 01110011 00101110 00100000 01000100 01110101 01101101 01101101 01101111 01100100 01101111 00100000 01100110 01100101 01101100 01101001 01111000 00100000 01110011 01101001 01110011 00101100 00100000 01100101 01100111 01101111 00100000 01100110 01100101 01101100 01101001 01111000 00100000 01100101 01110010 01101111 00101100 00100000 01100101 01110100 01101001 01100001 01101101 00100000 01110011 01101001 00100000 01100011 01110101 01101101 00100000 01100001 01101100 01101001 01101111 00101110 00100000 01010011 01110000 01100101 01110010 01101111 00100000 01101110 01100101 00100000 01101110 01101111 01110011 01110100 01110010 01100001 00100000 01110010 01100101 01101100 01100001 01110100 01101001 01101111 00100000 01110000 01100101 01101001 01101111 01110010 00100000 01100110 01101001 01100001 01110100 00101100 00100000 01100101 01110100 00100000 01110011 01100011 01101001 01110100 01101111 00100000 01101101 01100101 00100000 01110011 01100101 01101101 01110000 01100101 01110010 00100000 01110100 01101001 01100010 01101001 00100000 01110000 01110010 01100001 01100101 01110011 01110100 01101111 00100000 01100110 01110101 01110100 01110101 01110010 01100001 01101101 00100000 01100101 01110011 01110011 01100101 00101110"
   },
   {
-    id: 19,
-    titulo: "Carta #19",
-    mensaje: "Diecinueveava carta. Escríbele algo sobre su sonrisa, su forma de ser, lo que más te ilumina y alegra de quien ella es. ☀️"
+    "id": 19,
+    "titulo": "28 de Mayo",
+    "mensaje": "Definitivamente, cualquier historia, risa o chisme es mil veces mejor si lo comparto contigo. Nadie me entiende como tú."
   },
   {
-    id: 20,
-    titulo: "Carta #20",
-    mensaje: "Veinte mensajes de corazón. Dile lo que significa para ti este cumpleaños y por qué celebrarla es tan importante. 🎊"
+    "id": 20,
+    "titulo": "29 de Mayo",
+    "mensaje": "Jaja, me encanta la idea de hacernos tatuajes combinados, pero primero gasta en ti, consiéntete y disfruta al máximo de la vida. Te lo mereces mucho."
   },
   {
-    id: 21,
-    titulo: "Carta #21",
-    mensaje: "Veintiuna cartas. ¿Qué le desearías si pudieras darle cualquier cosa en el mundo? Escríbelo sin límites, con toda la imaginación. 🌟"
+    "id": 21,
+    "titulo": "30 de Mayo",
+    "mensaje": "No hay mejor plan para un sábado lento y tranquilo que poder pasarlo a tu lado, disfrutando del tiempo sin ninguna prisa."
   },
   {
-    id: 22,
-    titulo: "Carta #22",
-    mensaje: "Veintidós mensajes. El penúltimo. Dile cuánto la extrañas cuando no están juntos, o cuánto agradeces cada momento que comparten. 💞"
+    "id": 22,
+    "titulo": "31 de Mayo",
+    "mensaje": "A pesar de los sustos de la vida, me fascina ver cómo disfrutas cada situación y cómo siempre logras sacar la mejor versión de todo lo que te pasa."
   },
   {
-    id: 23,
-    titulo: "Carta #23",
-    mensaje: "La última carta. Número 23. Una por cada año de esta vida hermosa que vino a iluminar el mundo. Feliz cumpleaños, Bri. Eres la mejor persona que he conocido. 🎀✨"
+    "id": 23,
+    "titulo": "1 de Junio",
+    "mensaje": "Empezamos un mes súper especial. No te imaginas cómo estoy contando los días para poder decirte de frente todo lo que guardo aquí dentro."
+  },
+  {
+    "id": 24,
+    "titulo": "2 de Junio",
+    "mensaje": "Estamos a solo un paso del gran día. La espera me hace sentirte cerca, pero a la vez extraño tenerte aún más cerquita de mí."
+  },
+  {
+    "id": 25,
+    "titulo": "3 de Junio",
+    "mensaje": "¡Por fin llegó el día! Lo único que inunda mi mente es desearte el mejor cumpleaños. Sinceramente, ya no puedo imaginarme la vida sin ti."
   }
 ];
 
